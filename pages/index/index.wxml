@@ -1,0 +1,96 @@
+<!--index.wxml-->
+<view class='home-page' wx:if='{{!showLoginPage}}'>
+  <!-- banner部分 -->
+  <view class='banner'>
+    <image src='../images/banner04.jpg'></image>
+  </view>
+  <!-- 导航 -->
+  <view class='tab-list'>
+    <!-- 平分导航条 -->
+    <scroll-view scroll-x class="bg-white nav-radius">
+      <view class="flex text-center">
+        <view class="cu-item flex-sub {{index==TabCur?'text-orange cur':''}}" wx:for="{{tablist}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+          <!-- Tab{{index}} -->
+          <view class="cu-item">
+            <view class="tab-icon cuIcon-{{item.iconName}} lg text-gray"></view>
+            <navigator url="{{item.src}}">{{item.text}}</navigator>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <!-- 商品列表 -->
+  <view class='product'>
+    <view class='product-list'>
+      <view class='title'>限时抢购</view>
+      <view class='list'>
+        <view class='list-item bg-white'>
+          <view class='image-box'>
+            <image src='../images/cherry1.jpg' mode='aspectFit'></image>
+          </view>
+          <view class='descript'>
+            <label>草莓卷草莓樱桃 250g莓卷草莓樱桃 250g卷草莓樱</label>
+            <!-- <text>限时</text> -->
+          </view>
+          <view class='price'>
+            <label>￥39.90</label>
+            <text>￥59.90</text>
+            <label class='cuIcon-cart shoping-car'></label>
+          </view>
+        </view>
+        <view class='list-item bg-white'>
+          <view class='image-box'>
+            <image src='../images/cherry3.jpg' mode='aspectFit'></image>
+          </view>
+          <view class='descript'>
+            <label>草莓卷草莓樱桃 250g莓卷草莓樱桃 250g</label>
+            <!-- <text>限时</text> -->
+          </view>
+          <view class='price'>
+            <label>￥39.90</label>
+            <text>￥59.90</text>
+            <label class='cuIcon-cart shoping-car'></label>
+          </view>
+        </view>
+        <view class='list-item bg-white'>
+          <view class='image-box'>
+            <image src='../images/cherry4.jpg' mode='aspectFit'></image>
+          </view>
+          <view class='descript'>
+            <label>草莓卷草莓樱桃 250g莓卷草莓樱桃 250g</label>
+            <!-- <text>限时</text> -->
+          </view>
+          <view class='price'>
+            <label>￥39.90</label>
+            <text>￥59.90</text>
+            <label class='cuIcon-cart shoping-car'></label>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='login-page' wx:if='{{showLoginPage}}'>
+  <image src='../images/login_bg_blue.jpg'></image>
+  <!-- 登录框 -->
+  <view class="login-content">
+    <form method="post" class="login-form">
+      <view>
+        <input type="text" name="username" id="username" placeholder="用户名" bindblur="usernameBlur" value="{{username}}" />
+      </view>
+      <view>
+        <input type="password" id="password" value="{{password}}" placeholder="密码" bindblur="passwordBlur" value="{{password}}"/>
+      </view>
+      <!-- <hr class="hr15"> -->
+      <view class="remember-out">
+      <checkbox-group bindchange="checkboxChange">
+        <label>记住密码</label>
+        <checkbox class="remember" checked="{{isChecked}}"/>
+      </checkbox-group>
+      </view>
+     
+      <button class="loginin" bindtap="login">登录</button>
+    
+    </form>
+  </view>
+</view>

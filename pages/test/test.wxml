@@ -1,0 +1,23 @@
+<!--pages/login/login.wxml-->
+<wxs module="filter" src="./../../filter/filters.wxs"></wxs>
+
+<view> {{filter.msg}} </view>
+<view> {{filter.bar(2)}} </view>
+<view> {{filter.formatNumberCommaStyle(4000,2)}} </view>
+<view> {{filter.sub('ghiuhijo')}} </view>
+<view> {{filter.timestampToDate(1567574907104)}} </view>
+<view> 千分符：{{filter.qian(1567574907104)}} </view>
+
+<text>pages/login/login.wxml</text>
+<!-- 图表 -->
+<view class="container">
+<view class="charts">
+ <ff-canvas id="column-dom" canvas-id="column" opts="{{ opts }}"></ff-canvas>
+</view>
+<view>
+<!-- 组件 -->
+<list-demo></list-demo> 
+<!-- 过滤器 -->
+<view>{{}}%</view>
+</view>
+</view>

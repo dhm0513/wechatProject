@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "ff-canvas": "@antv/f2-canvas",
+    "list-demo":"../../components/list/list"
+  }
+}
