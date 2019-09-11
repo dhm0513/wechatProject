@@ -1,0 +1,80 @@
+/* pages/me/me.wxss */
+.me-top{
+  position: relative;
+}
+.me-top .me-top-bg{
+  width: 100%;
+  height: 250rpx;
+}
+/* .me-top .account{
+  
+} */  
+.me-top .photo{
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+  background-color: #cccccc;
+  position: absolute;
+  top:50%;
+  left:56rpx;
+  transform: translateY(-50%); 
+}
+.me-top .phone-number{
+  position: absolute;
+  top:50%;
+  left:230rpx;
+  transform: translateY(-50%); 
+}
+
+/* 导航部分 */
+
+.tab-list {
+  width: 100%;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+.tab-list .nav-radius {
+  width: 100%;
+  border-radius: 20rpx;
+  font-size: 22rpx;
+}
+
+.tab-list .nav-radius .flex {
+  align-self: center;
+  /* padding: 30rpx 0; */
+}
+.tab-list .nav-radius .flex-sub{
+  padding: 30rpx 0;
+}
+
+.tab-icon {
+  font-size: 40rpx;
+}
+
+/* 主体内容 */
+.me-content .content-item{
+  padding: 30rpx;
+  color:#999;
+  /* background-color: white; */
+  position: relative;
+  margin-bottom: 20rpx;
+}
+.me-content .content-item .arrow-box{
+  width: 20rpx;
+  height:30rpx;
+  position: absolute;
+  top:50%;
+  right:20rpx;
+  transform: translateY(-50%);
+}
+.me-content .arrow-box image{
+  height: 100%;
+}
+
+/* 退出当前账号 */
+.exit-account{
+  color:#999;
+  text-align: center;
+  padding: 28rpx 0;
+}

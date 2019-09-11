@@ -1,0 +1,39 @@
+<!--pages/me/me.wxml-->
+<!-- 头部个人信息 -->
+<view class="me-top">
+  <image class="me-top-bg" src='../images/bg_me_pink.png' mode="scaleToFill"></image>
+  <view class="account">
+    <view class="photo">
+      <image src=""></image>
+    </view>
+    <view class="phone-number">184****8805</view>
+  </view>
+</view>
+<!-- 中部导航 -->
+<view class='tab-list'>
+  <!-- 平分导航条 -->
+  <scroll-view scroll-x class="bg-white nav-radius">
+    <view class="flex text-center">
+      <navigator url="{{item.src}}" class="cu-item flex-sub {{index==TabCur?'text-orange cur':''}}" wx:for="{{tablist}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+        <!-- Tab{{index}} -->
+        <view class="cu-item">
+          <view class="tab-icon cuIcon-{{item.iconName}} lg text-gray"></view>
+          <text>{{item.text}}</text>
+        </view>
+      </navigator>
+    </view>
+  </scroll-view>
+</view>
+<!-- 主题内容 -->
+<view class="me-content">
+  <navigator class="content-item bg-white"  wx:for="{{contentList}}" url="{{item.src}}">
+    <text>{{item.text}}</text>
+    <view class="arrow-box">
+      <image src="../images/icon_arrow.png" mode="scaleToFill"></image>
+    </view>
+  </navigator>
+</view>
+<!-- 退出账号 -->
+<view class="exit-account bg-white">
+  <text>退出当前账号</text>
+</view>

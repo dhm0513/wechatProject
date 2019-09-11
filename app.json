@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/test/test"
+    "pages/logs/logs",
+    "pages/test/test",
+    "pages/me/me"
   ],
   "subpackages": [
     {
@@ -16,6 +18,31 @@
     "navigationBarBackgroundColor": "#000",
     "navigationBarTitleText": "cherry's home",
     "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#000000",
+    "borderStyle": "white",
+    "backgroundColor": "#f8f6f9",
+    "list": [
+      {
+        "iconPath": "pages/images/add_gray.png",
+        "selectedIconPath": "pages/images/add_pink.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "pages/images/add_gray.png",
+        "selectedIconPath": "pages/images/add_pink.png",
+        "pagePath": "pages/logs/logs"
+      },
+      {
+        "iconPath": "pages/images/add_gray.png",
+        "selectedIconPath": "pages/images/icon_tabbar_me.png",
+        "pagePath": "pages/me/me",
+        "text": "我的"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }
