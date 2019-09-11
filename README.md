@@ -3,4 +3,4 @@
 
 *一个手账小程序*
 
-![可爱](https://c-ssl.duitang.com/uploads/item/201602/27/20160227223919_eGtvu.jpeg) 
+![可爱](http://img.wxcha.com/file/201801/08/b6aa626b6f.jpg) 
