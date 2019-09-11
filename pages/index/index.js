@@ -82,7 +82,8 @@ Page({
         if (res.data.code==0){
           that.setData({
             showLoginPage: false,
-          })
+          });
+          wx.showTabBar({});
         }
       },
     })
@@ -105,6 +106,7 @@ Page({
     // }
   },
   onLoad: function() {
+    wx.hideTabBar({});
     /*页面加载从缓存中获取账号密码*/
     this.setData({
       isChecked: wx.getStorageSync('remember'),

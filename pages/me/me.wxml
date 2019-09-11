@@ -34,6 +34,6 @@
   </navigator>
 </view>
 <!-- 退出账号 -->
-<view class="exit-account bg-white">
+<view class="exit-account bg-white" bindtap="exitAccount">
   <text>退出当前账号</text>
 </view>

@@ -37,7 +37,7 @@
         "pagePath": "pages/logs/logs"
       },
       {
-        "iconPath": "pages/images/add_gray.png",
+        "iconPath": "pages/images/icon_tabbar_me.png",
         "selectedIconPath": "pages/images/icon_tabbar_me.png",
         "pagePath": "pages/me/me",
         "text": "我的"
