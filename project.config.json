@@ -48,7 +48,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 3,
+			"current": 4,
 			"list": [
 				{
 					"id": -1,
@@ -75,6 +75,13 @@
 					"id": -1,
 					"name": "我的",
 					"pathName": "pages/me/me",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "添加标签",
+					"pathName": "addRecord/addTag/addTag",
 					"query": "",
 					"scene": null
 				}

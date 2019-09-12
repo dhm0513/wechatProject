@@ -1,0 +1,40 @@
+/* addRecord/addTag/addTag.wxss */
+
+.add-page-out {
+  height: 100%;
+}
+
+/* 添加标签区 */
+
+.add-tag input {
+  padding-left: 20rpx;
+}
+
+/* 展示标签区 */
+
+.show-tag {
+  padding: 0 30rpx;
+}
+
+.show-tag .tag-box-out {
+  margin: 40rpx 0;
+}
+
+.show-tag .tag-box-out .tag-box {
+  width:20%;
+  display: inline-block;
+  margin: 10rpx auto;
+  font-size: 22rpx;
+  /* position: relative; */
+text-align: center;
+}
+
+.show-tag .tag-box text {
+  display: inline-block;
+  border: 2rpx solid #ccc;
+  padding: 12rpx 20rpx;
+  border-radius: 40rpx;
+  text-align: center;
+  color:#ccc;
+  
+}

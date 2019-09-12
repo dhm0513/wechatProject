@@ -3,13 +3,21 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/test/test",
-    "pages/me/me"
+    "pages/me/me",
+    "pages/addIndex/addIndex"
   ],
   "subpackages": [
     {
       "root": "orderManagement",
       "pages": [
         "index/index"
+      ]
+    },
+    {
+      "root": "addRecord",
+      "pages": [
+        "addTag/addTag",
+        "addIndex/addIndex"
       ]
     }
   ],
@@ -34,7 +42,7 @@
       {
         "iconPath": "pages/images/add_gray.png",
         "selectedIconPath": "pages/images/add_pink.png",
-        "pagePath": "pages/logs/logs"
+        "pagePath": "pages/addIndex/addIndex"
       },
       {
         "iconPath": "pages/images/icon_tabbar_me.png",

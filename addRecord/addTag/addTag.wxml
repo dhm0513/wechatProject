@@ -1,0 +1,41 @@
+<!--addRecord/addTag/addTag.wxml-->
+<!-- <text>新增标签</text> -->
+<view class="add-page-out bg-white">
+  <!-- 添加标签框 -->
+  <view class="add-tag">
+    <view class="cu-bar search bg-white">
+      <view class="search-form round">
+        <!-- <text></text> -->
+        <input type="text" placeholder="添加标签名" confirm-type="search"></input>
+      </view>
+      <view class="action">
+        <button class="cu-btn bg-pink light shadow-blur round">
+          <text class="cuIcon-add text-white"></text>
+        </button>
+      </view>
+    </view>
+  </view>
+  <!-- 标签展示区 -->
+  <view class="show-tag">
+    <view class="tag-box-out">
+      <view class="tag-box">
+        <text>好心情</text>
+      </view>
+      <view class="tag-box">
+        <text>好心情</text>
+      </view>
+      <view class="tag-box">
+        <text>好心情</text>
+      </view>
+      <view class="tag-box">
+        <text>好心情</text>
+      </view>
+      <view class="tag-box">
+        <text>好心情</text>
+      </view>
+      <view class="tag-box">
+        <text>好心情</text>
+      </view>
+    </view>
+  </view>
+</view>
