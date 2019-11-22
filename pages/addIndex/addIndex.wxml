@@ -1,3 +1,46 @@
-<!--pages/addIndex/addIndex.wxml-->
-<text>pages/addIndex/addIndex.wxml</text>
-<navigator url="/addRecord/addTag/addTag">点击添加标签</navigator>
+<!--信息浏览主体页面-->
+<wxs module="filter" src="./../../filter/filters.wxs"></wxs>
+
+<!-- 上方banner图 -->
+<view class="list-top">
+  <image class="list-top-bg" src='../images/bg_me_pink.png' mode="scaleToFill"></image>
+</view>
+<!-- 中部点击添加部分 -->
+<view class="list-middle" bindtap="addAnother">
+  <view class="list-content">
+  <view class="left">
+    <text class="cuIcon-add"></text>
+  </view>
+  <view class="middle">
+    <view class="title">点击增加记录。。。</view>
+  </view>
+  <view class="right">
+  </view>
+</view>
+</view>
+
+<!-- 列表展示部分 -->
+<view class="list-content" bindtap="showDetail">
+  <view class="left">
+    <text class="cuIcon-friendadd"></text>
+  </view>
+  <view class="middle">
+    <view class="title">这里是标题</view>
+    <view class="remark">这里是备注hj华国锋hi哦老大们，据胡润还是拒绝对方说的话附件是刚刚他有办法v基金偶就iuiu哦品牌计划是今后还将可口可乐比较紧急哦怕怕了了卡卡斤斤计较</view>
+  </view>
+  <view class="right">
+    <text class="price">{{filter.formatNumberCommaStyle(4000,0)}}</text>
+  </view>
+</view>
+<view class="list-content" bindtap="showDetail">
+  <view class="left">
+    <text class="cuIcon-clothesfill lg center"></text>
+  </view>
+  <view class="middle">
+    <view class="title">这里是标题</view>
+    <view class="remark">这里是备注hj华国锋hi哦老大们，据胡润还是拒绝对方说的话附件是刚刚他有办法v基金偶就iuiu哦品牌计划是今后还将可口可乐比较紧急哦怕怕了了卡卡斤斤计较</view>
+  </view>
+  <view class="right">
+    <text class="price">{{filter.formatNumberCommaStyle(4000,0)}}</text>
+  </view>
+</view>

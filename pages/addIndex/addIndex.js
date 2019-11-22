@@ -7,7 +7,16 @@ Page({
   data: {
 
   },
-
+  addAnother(e) {
+    wx.navigateTo({
+      url: '/addRecord/addIndex/addIndex'
+    })
+  },
+  showDetail(e) {
+    wx.navigateTo({
+      url: '/addRecord/addDetail/addDetail'
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

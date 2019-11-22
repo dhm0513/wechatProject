@@ -42,7 +42,7 @@ Page({
     TabCur: null,
   },
   exitAccount(){
-    console.log('退出账户');
+    // console.log('退出账户');
     wx.reLaunch({
       url: './../index/index'
     })

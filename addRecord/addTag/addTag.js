@@ -5,7 +5,50 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    tagList:[
+      {name:'早',id:121},
+      {name:'中',id:121},
+      {name:'晚',id:121},
+      {name:'心情',id:121},
+      {name:'多云',id:121},
+      {name:'多云',id:121},
+      {name:'多云',id:121},
+      {name:'多云',id:121},
+      {name:'多云',id:121}
+    ],
+    inputVal:''//input框数据
+  },
+  inputTyping(e){
+    // console.log('点击input：' + JSON.stringify(e.detail.value));
+    this.setData({
+      inputVal: e.detail.value,
+    });
+  },
+  // 回车搜索
+  confirmTap(e){
+    var obj = { name: this.data.inputVal,id:1};
+    this.data.tagList.push(obj);
+    this.setData({
+      tagList: this.data.tagList,
+    });
+  },
+  // 请求标签数据
+  tagDataRequest(){
+    const that = this;
+    
+    app.requestUrl({
+      url: "sys/login",
+      method: "POST",
+      data: data,
+      success: function (res) {
+        if (res.data.code == 0) {
+          that.setData({
+            showLoginPage: false,
+          });
+          wx.showTabBar({});
+        }
+      },
+    })
   },
 
   /**
@@ -14,6 +57,21 @@ Page({
   onLoad: function (options) {
     wx.setNavigationBarTitle({
       title: '添加标签'
+    })
+    // 请求过来的数据
+    let r = [
+      { name: '早1', id: 121 },
+      { name: '中1', id: 121 },
+      { name: '晚1', id: 121 },
+      { name: '心情1', id: 121 },
+      { name: '多云1', id: 121 },
+      { name: '多云1', id: 121 },
+      { name: '多云1', id: 121 },
+      { name: '多云1', id: 121 },
+      { name: '多云1', id: 121 }
+    ]
+    this.setData({
+      tagList: r,
     })
   },
 

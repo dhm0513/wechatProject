@@ -71,13 +71,13 @@ var date = getDate('2019-9-5');
 var hour = date.getMonth();
 var day = date.getDay();
 
-console.log(date);
-console.log(date.getFullYear(), date.getMonth(), date.getDate(), date.getTime(), date.getDay());//2019 8 5 1567612800000 4 
+// console.log(date);
+// console.log(date.getFullYear(), date.getMonth(), date.getDate(), date.getTime(), date.getDay());//2019 8 5 1567612800000 4 
 
 /*数据类型 */
 var number = 10;
-console.log("Number" === number.constructor);//true
-console.log('number' === typeof number);//true
+// console.log("Number" === number.constructor);//true
+// console.log('number' === typeof number);//true
 
 /*正则*/
 // var a = getRegExp('\(\d{1,3})(?=(\d{3})+(?:$|\.))\','g');
@@ -87,7 +87,7 @@ console.log('number' === typeof number);//true
 var reg = getRegExp("/B(?=(/d{4})+(?!/d))", "g");
 var phoneNumber = '18438638805';
 var afterStr = phoneNumber.replace(reg, ' ');
-console.log(afterStr) 
+// console.log(afterStr) 
 
 module.exports = {
   formatNumberCommaStyle: formatNumberCommaStyle,

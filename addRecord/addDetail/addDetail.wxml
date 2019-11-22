@@ -1,0 +1,53 @@
+<!--点击查看/编辑详情-->
+<!-- <text>addRecord/addDetail/addDetail.wxml</text> -->
+<!-- <view bindtap="tabSelect">测试transition</view>
+<view class="default {{isshow?'show':''}}" >
+  <navigator class="navigator">
+    <view class="navigator-text">测试1</view>
+    <view class="navigator-arrow"></view>
+  </navigator>
+   <navigator class="navigator">
+    <view class="navigator-text">测试2</view>
+    <view class="navigator-arrow"></view>
+  </navigator>
+   <navigator class="navigator">
+    <view class="navigator-text">测试3</view>
+    <view class="navigator-arrow"></view>
+  </navigator>
+</view> -->
+<view class="out-box">
+  <!-- 头部logo -->
+  <view class="header">
+    <view class="head-in">
+      <image src='../images/logo.png'></image>
+    </view>
+  </view>
+
+  <!-- 中部分块布局 -->
+  <view class="middle">
+    <view class="box-out" wx:for="{{list}}" data-index="{{item.index}}">
+      <view class="box" bindtap="tabSelect">
+        <label>{{item.name}}</label>
+      </view>
+    </view>
+  </view>
+
+  <!-- 上滑页面 -->
+  <view class="slide-up {{isshow?'slide-up-show':''}}">
+    <!-- 返回按钮 -->
+    <view class="title-back">
+      <view class="click-back" bindtap="clickBack">
+        <image src="../images/close.png"></image>
+      </view>
+    </view>
+    <!-- 上传图片区域 -->
+    <view class="image-box" wx:for="{{2}}">
+      <image src="../images/close.png"></image>
+    </view>
+    <view style="clear:both;"></view>
+    <!-- 上传按钮 -->
+    <view class="upload-image-btn">
+      <button class='upload-btn' bindtap="chooseImage">点击上传 </button>
+    </view>
+  </view>
+</view>

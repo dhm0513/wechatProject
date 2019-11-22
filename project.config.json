@@ -48,7 +48,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 4,
+			"current": 7,
 			"list": [
 				{
 					"id": -1,
@@ -59,8 +59,8 @@
 				},
 				{
 					"id": 1,
-					"name": "测试页面",
-					"pathName": "pages/test/test",
+					"name": "列表浏览页面",
+					"pathName": "pages/addIndex/addIndex",
 					"query": "",
 					"scene": null
 				},
@@ -83,6 +83,26 @@
 					"name": "添加标签",
 					"pathName": "addRecord/addTag/addTag",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": 5,
+					"name": "添加事务页面",
+					"pathName": "addRecord/addIndex/addIndex",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "测试界面",
+					"pathName": "pages/test/test",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "缓缓下拉",
+					"pathName": "addRecord/addDetail/addDetail",
 					"scene": null
 				}
 			]

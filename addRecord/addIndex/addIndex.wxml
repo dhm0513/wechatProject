@@ -1,2 +1,3 @@
 <!--addRecord/addIndex/addIndex.wxml-->
 <text>addRecord/addIndex/addIndex.wxml</text>
+<navigator url="/addRecord/addTag/addTag">点击添加标签</navigator>
