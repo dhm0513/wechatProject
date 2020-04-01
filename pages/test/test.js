@@ -44,9 +44,37 @@ Page({
   data: {
     opts: {
       onInit: initChart
-    }
+    },
+    byChild:''
   },
-
+  byChild:function(e){
+    console.log(e);
+    this.setData({
+      byChild:e.detail.thisMsg
+    })
+    console.log(this.data.byChild);
+  },
+  showToast:function(){
+    wx.showToast({
+      title: '成功',
+      icon: 'success',
+      duration: 2000
+    })
+  },
+  startSacnCode:function(){
+    wx.scanCode({
+      success(res) {
+        console.log('开启成功');
+      }
+    })
+  },
+  onLoad(){
+    wx.showTabBar({});
+  },
   onReady() {
+   
+  },
+  onShow(){
+    wx.showTabBar({});
   }
 });

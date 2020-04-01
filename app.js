@@ -51,7 +51,7 @@ App({
     wx.request({
       "url": this.getUrl()+url,
       "method": method,
-      "data": data || {},//看情况
+      "data": data || {},//string/object/ArrayBuffer
       "header": {
         'content-type': 'application/x-www-form-urlencoded'
       },

@@ -1,2 +1,6 @@
 <!--components/list/list.wxml-->
-<text>components/list/list.wxml</text>
+<view>
+  <text>components/list/list.wxml</text>
+  <button bindtap="send">点击</button>
+</view>
+

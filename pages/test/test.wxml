@@ -16,8 +16,12 @@
 </view>
 <view>
 <!-- 组件 -->
-<list-demo></list-demo> 
+<list-demo bind:myEvent="byChild"></list-demo> 
 <!-- 过滤器 -->
-<view>{{}}%</view>
+<view>{{filter.formatNumberCommaStyle(80,2)}}%</view>
+<!-- 弹出信息框 -->
+<button bindtap="showToast">点击弹出信息框</button>
+<!-- 点击开启扫一扫 -->
+<button bindtap="startSacnCode">扫一扫</button>
 </view>
 </view>

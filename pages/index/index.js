@@ -38,7 +38,8 @@ Page({
     error: false,
     errorMore3: false,
     errorMsg: '',
-    src: 'captcha.jpg'
+    src: 'captcha.jpg',
+    price:9999999
   },
   tabSelect(e) {
     this.setData({
@@ -84,6 +85,12 @@ Page({
             showLoginPage: false,
           });
           wx.showTabBar({});
+        }else{
+          wx.showToast({
+            title: '请求失败',
+            icon: 'none',
+            duration: 2000
+          })
         }
       },
     })
@@ -104,6 +111,11 @@ Page({
     //   $.cookie("username", '', { expires: -1 });
     //   $.cookie("password", '', { expires: -1 });
     // }
+  },
+  toTest:function(){
+    wx.navigateTo({
+      url: '../test/test'
+    })
   },
   onLoad: function() {
     wx.hideTabBar({});
